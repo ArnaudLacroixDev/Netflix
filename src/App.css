@@ -1,0 +1,55 @@
+body {
+  background-color: #000000;
+  padding: 0px 0px 0px 50px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+h2 {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 25px 0px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.left-arrow-icon {
+  object-fit: scale-down;
+  position: absolute;
+  left: -3%;
+  cursor: pointer;
+}
+
+.right-arrow-icon {
+  object-fit: scale-down;
+  position: absolute;
+  right: -3%;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.section img {
+  width: 220px;
+  height: 124px;
+  scroll-snap-align: start;
+  cursor: pointer;
+}
+
+.img-carousel:hover {
+  opacity: 50%;
+}
